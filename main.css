@@ -1,35 +1,100 @@
 logo img{
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 40%;
+    margin: 10% 0% 10% 0%;
+    /*height: 150px;*/
     object-fit: cover; /* 画像のトリミング */
+    
+    /*ここフェード*/
+    font-size: 20px;
+    font-weight: bold;
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    }
+    @keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(7px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 logotohome img{
     display: block;
     width: 50px;
-    height: 50px;
+    /*height: 50px;*/
     object-fit: cover; /* 画像のトリミング */
 }
 
 /* トップページの一覧に関するスタイル----------------------------------------------*/
+body {
+	margin: 0px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 60px;
+	font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.gridItem {
+	padding: 20px 20px;
+	background: rgba(11, 52, 110, .4);
+	color: #fff;
+}
+
+.gridB {
+	background: rgba(11, 52, 110, .5);
+}
+
+.gridC {
+	background: rgba(11, 52, 110, .6);
+}
+
+.gridD {
+	background: rgba(11, 52, 110, .7);
+}
+
+.gridE {
+	background: rgba(11, 52, 110, .8);
+}
+
+.gridF {
+	background: rgba(11, 52, 110, .9);
+}
+
+.gridG {
+	background: rgba(11, 52, 110, 1);
+}
+
+
+
+
+/*ほぼデフォ
 figure {
     display: inline-block;   /* インラインブロック化 */
-    margin: 0px 3px 7px 0px; /* 外側に余白を追加(※右に3px・下に7px) */
-    background-color: #efefef; 
+    /*margin: 3%; /* 外側に余白を追加(※右に3px・下に7px) */
+    /*background-color: #efefef; */
 }
-figure img {
+/* figure img {
     display: block;          /* 余計な余白が出ないようにする */
-    margin: 0px 0px 3px 0px; /* 下側にだけ3pxの余白を追加 */
-    width: 200px;
-    height: 200px;
+    /*margin: 50px 50px 50px 50px; /* 下側にだけ3pxの余白を追加 */
+    width: 40%;
+    height: 40%;
     object-fit: cover; /* 画像のトリミング */
+    padding: 3%
 }
-figcaption {
-    width: 150px;
-    height: 80px;
-    font-size: 0.9em;        /* 文字サイズを90%に */
-    text-align: center;      /* 中身をセンタリング */
-    word-wrap: break-word;
+/* figcaption {
+    width: 40%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /* ---------------------------------------------------------------------------*/
 
